@@ -1,0 +1,60 @@
+.user-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    overflow: visible;
+}
+
+/* Username Button */
+.username-btn {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    max-width: 200px; /* Adjust width to prevent cutting off */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content; /* Makes sure text doesn't get cut */
+    min-width: 150px;
+    background-color: darkgrey;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    z-index: 999; /* Ensures it's on top */
+    overflow: visible;
+    word-wrap: break-word; /* Prevents text from overflowing */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    color: black;
+    background-color: lightgrey;
+    white-space: nowrap;
+    border-bottom: 1px solid darkgrey;
+}
+
+.dropdown-menu li:hover {
+    background-color: darkgrey;
+}

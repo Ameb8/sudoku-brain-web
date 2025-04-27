@@ -1,0 +1,18 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /*background-color: #f7f7f7;
+    */font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 3%;
+    font-size: 5vw;
+    font-style: oblique;
+}
