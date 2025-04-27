@@ -12,13 +12,11 @@ function Home() {
     return (
         <div className="home">
             <Navbar></Navbar>
-            <h1>SudokuBrain</h1>
-            <div>
+            <div className="button-container">
                 <button className="main-button" onClick={() => navigate("/QuickPlay")}>Quick Play</button>
                 <button className="main-button" onClick={() => navigate("/LeaderBoardPage")}>Leader Board</button>
             </div>
             <LoginButton />
-
         </div>
     );
 }

@@ -5,7 +5,6 @@ import UserAvatar from "./UserAvatar.jsx"; // Import the CSS file
 export default function Navbar() {
     return (
         <nav className="navbar">
-            {/* Left Side - Brand Title */}
             <div className="navbar-title">SudokuBrain</div>
 
             <div className="navbar-user">
