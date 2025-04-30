@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Board from "../components/Board.jsx";
-import PuzzleMetricsBanner from "../components/PuzzleMetricsBanner"; // Import the banner component
+import PuzzleMetricsBanner from "../components/PuzzleMetricsBanner";
 import axios from "axios";
 import PuzzleMetrics from "../models/PuzzleMetrics"; // Import the PuzzleMetrics class
 import LoginButton from "../components/LoginButton.jsx";
@@ -56,12 +56,8 @@ function QuickPlay() {
     return (
         <div>
             <Navbar />
-            <div>
-                <Header text="Quick Play" />
-                <LoginButton />
-            </div>
-            {puzzleMetrics && <PuzzleMetricsBanner metrics={puzzleMetrics} />}
             <Board puzzle={puzzle} />
+            {puzzleMetrics && <PuzzleMetricsBanner metrics={puzzleMetrics} />}
         </div>
     );
 }

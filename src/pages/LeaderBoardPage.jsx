@@ -1,11 +1,11 @@
 import Header from "../components/Header";
 import LeaderBoard from "../components/LeaderBoard.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 function LeaderBoardPage() {
-    console.log('LeaderBoardPage reached')
-
     return (
         <div>
+            <Navbar />
             <LeaderBoard></LeaderBoard>
         </div>
     );

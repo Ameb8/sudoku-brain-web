@@ -8,6 +8,9 @@ import QuickPlay from "./pages/QuickPlay";
 import LeaderBoardPage from "./pages/LeaderBoardPage.jsx";
 import './App.css'
 import {UserProvider} from "./components/UserProvider.jsx";
+import ProfilePage from "./pages/ProfilePage.jsx";
+import AttemptedPuzzles from "./pages/AttemptedPuzzles.jsx";
+import PlayPuzzle from "./pages/PlayPuzzle.jsx";
 
 
 
@@ -19,6 +22,9 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/QuickPlay" element={<QuickPlay />} />
                     <Route path="/LeaderBoardPage" element={<LeaderBoardPage />} />
+                    <Route path="/Profile" element={<ProfilePage />} />
+                    <Route path="/AttemptedPuzzles" element={<AttemptedPuzzles />} />
+                    <Route path="/PlayPuzzle" element={<PlayPuzzle />} />
                 </Routes>
             </Router>
         </UserProvider>

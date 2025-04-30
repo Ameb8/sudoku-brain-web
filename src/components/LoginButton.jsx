@@ -1,4 +1,4 @@
-import React from "react";
+import "./LoginButton.css"
 
 const LoginButton = () => {
     const handleLogin = () => {
@@ -6,7 +6,7 @@ const LoginButton = () => {
     };
 
     return (
-        <button onClick={handleLogin} style={{ padding: "10px", fontSize: "16px" }}>
+        <button onClick={handleLogin} className="login-button">
             Login with Google
         </button>
     );

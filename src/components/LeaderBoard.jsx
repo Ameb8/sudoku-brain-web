@@ -13,9 +13,6 @@ const Leaderboard = () => {
 
     // Fetch leaderboard data
     const fetchLeaders = async (page, size) => {
-        //DEBUG
-        console.log(`Fetching leaders for page: ${page}, size: ${size}`);
-        //END DEBUG
 
         setIsLoading(true);
         setError(null); // Reset error state
@@ -26,12 +23,8 @@ const Leaderboard = () => {
             }
             const data = await response.json();
 
-            //DEBUG
-            console.log('Data received:', data);
-            //END DEBUG
-
             const fetchedLeaders = data.map(
-                (item) => new Leader(item.username, item.numSolved, item.avgSolveTime, item.avgHintsUsed)
+                (item) => new Leader(item.username, item.puzzlesSolved, item.avgSolveTime, item.avgHintsUsed)
             );
             setLeaders(fetchedLeaders);
         } catch (err) {
@@ -58,12 +51,7 @@ const Leaderboard = () => {
     };
 
     return (
-        //DEBUG
-        console.log("Render - leaders:", leaders, "isLoading:", isLoading, "error:", error),
-        //END DEBUG
-
         <div style={{ width: "40%", margin: "auto", textAlign: "center" }}>
-            <h1>Leaderboard</h1>
             {isLoading && <p>Loading...</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}
             <div

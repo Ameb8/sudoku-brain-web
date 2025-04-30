@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import { UserContext } from "./UserProvider";
 import "./UsernameDisplay.css";
 
@@ -18,7 +19,9 @@ export default function UserProfile() {
             {dropdownOpen && (
                 <div className="dropdown-menu">
                     <ul>
-                        <li>Profile</li>
+                        <li>
+                            <Link to="/Profile">Profile</Link>
+                        </li>
                         <li>Settings</li>
                         <li>Logout</li>
                     </ul>
